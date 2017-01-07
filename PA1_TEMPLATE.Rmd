@@ -81,7 +81,7 @@ h<-ggplot(avera,aes(x=interval,y=steps))+geom_line(color="skyblue", size=1)+
   ylab("Average Steps taken per day")
 print(h)
 ```
-![Figure 2](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-8-1.jpeg)
+![Figure 2](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-8-1.png)
 
 3. Which 5 minute interval accross all days contains the maximum number of steps
 
@@ -165,4 +165,4 @@ p<-ggplot(week,aes(x=interval, y=steps, color = weektype))+geom_line(size=1)+ fa
 print(p)
 ```
 
-![Figure 4](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-17-1.jpeg)
+![Figure 4](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-17-1.png)
