@@ -139,7 +139,7 @@ h<-ggplot(avera,aes(x=interval,y=steps))+geom_line(color="skyblue", size=1)+
 print(h)
 ```
 
-![Figure 2](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-8-1.jpeg?raw=TRUE)
+![Figure 2](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-8-1.jpeg)
 
 3. Which 5 minute interval accross all days contains the maximum number of steps
 
@@ -188,7 +188,7 @@ par(mfrow = c(1,2))
 hist(new, col = "dark blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogram (Imputed)"),xlab= "Total steps taken per day",adj=0.5)
 hist(total$Steps, col = "light blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogram (Non-Imputed)"),xlab = "Total steps taken per day", adj=0.5)
 ```
-![Figure 3](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-13-1.jpeg?raw=TRUE)
+![Figure 3](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-13-1.jpeg)
 
 4. 
 ######**Calculating the mean of the total steps taken per day when imputting NA values***
