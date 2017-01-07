@@ -42,7 +42,7 @@ colnames(total)<-c("Days","Steps")
 st<-hist(total$Steps,main="Histogram of number of steps taken per day",xlab="Total steps taken per day", col="skyblue")
 print(st)
 ```
-![Figure 1](PA1_TEMPLATE_files\figure-html\unnamed-chunk-4-1.jpeg?raw=TRUE)
+![Figure 1](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-4-1.png)
 ######**Calculating the mean of the total steps taken per day**
 
 ```{r}
