@@ -220,7 +220,7 @@ hist(new, col = "dark blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogr
 hist(total$Steps, col = "light blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogram (Non-Imputed)"),xlab = "Total steps taken per day", adj=0.5)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-13-1.png)<!-- -->
 
 
 
