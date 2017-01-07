@@ -68,7 +68,7 @@ colnames(total)<-c("Days","Steps")
 st<-hist(total$Steps,main="Histogram of number of steps taken per day",xlab="Total steps taken per day", col="skyblue")
 ```
 
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+[Figure1](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-4-1.png)
 
 ```r
 print(st)
@@ -96,8 +96,8 @@ print(st)
 ## attr(,"class")
 ## [1] "histogram"
 ```
+[Figure 1](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-4-1.png)
 
-[Figure 1](C://Users//jpinto//Dropbox//Reproducible//PA1_TEMPLATE_files//figure-html//unnamed-chunk-4-1.jpeg?raw=TRUE)
 ######**Calculating the mean of the total steps taken per day**
 
 
@@ -141,8 +141,7 @@ h<-ggplot(avera,aes(x=interval,y=steps))+geom_line(color="skyblue", size=1)+
 print(h)
 ```
 
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
-[Figure 2](C://Users//jpinto//Dropbox//Reproducible//PA1_TEMPLATE_files//figure-html//unnamed-chunk-8-1.jpeg?raw=TRUE)
+[Figure 2](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-8-1.jpeg?raw=TRUE)
 
 3. Which 5 minute interval accross all days contains the maximum number of steps
 
@@ -191,10 +190,7 @@ par(mfrow = c(1,2))
 hist(new, col = "dark blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogram (Imputed)"),xlab= "Total steps taken per day",adj=0.5)
 hist(total$Steps, col = "light blue",xlim=c(0,25000),ylim = c(0,40),main = paste("Histogram (Non-Imputed)"),xlab = "Total steps taken per day", adj=0.5)
 ```
-
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
-
-[Figure 3](C://Users//jpinto//Dropbox//Reproducible//PA1_TEMPLATE_files//figure-html//unnamed-chunk-13-1.jpeg?raw=TRUE)
+[Figure 3](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-13-1.jpeg?raw=TRUE)
 
 4. 
 ######**Calculating the mean of the total steps taken per day when imputting NA values***
@@ -253,7 +249,5 @@ week<-aggregate(steps~weektype+interval,data=impute,FUN=mean)
 p<-ggplot(week,aes(x=interval, y=steps, color = weektype))+geom_line(size=1)+ facet_grid(weektype~.)
 print(p)
 ```
+[Figure 4](https://github.com/Joanap08/RepData_PeerAssessment1/blob/master/unnamed-chunk-17-1.png)
 
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-17-1.png)<!-- -->
-
-[Figure 3](C://Users//jpinto//Dropbox//Reproducible//PA1_TEMPLATE_files//figure-html//unnamed-chunk-17-1.jpeg?raw=TRUE)
