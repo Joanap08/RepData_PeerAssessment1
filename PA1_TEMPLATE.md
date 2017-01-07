@@ -98,7 +98,7 @@ colnames(total)<-c("Days","Steps")
 st<-hist(total$Steps,main="Histogram of number of steps taken per day",xlab="Total steps taken per day", col="skyblue")
 ```
 
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-4-1.png?raw=TRUE)<!-- -->
 
 ```r
 print(st)
@@ -170,7 +170,7 @@ h<-ggplot(avera,aes(x=interval,y=steps))+geom_line(color="skyblue")+
 print(h)
 ```
 
-![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](PA1_TEMPLATE_files/figure-html/unnamed-chunk-8-1.png?raw=TRUE)<!-- -->
 
 3. Which 5 minute interval accross all days contains the maximum number of steps
 
